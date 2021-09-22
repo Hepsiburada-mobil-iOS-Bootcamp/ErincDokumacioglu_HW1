@@ -78,12 +78,17 @@ class AlgoruthmManager: AlgorithmProtocol {
      Output: true
      */
     func isAnagramTest() {
+        let s = "anagram"
+        let t = "nagaram"
         
+        print("\(s) and \(t) are anagram?: \(isAnagram(s, t))")
     }
     
-//    func isAnagram(_ s: String, _ t: String) -> Bool {
-//
-//    }
+    func isAnagram(_ s: String, _ t: String) -> Bool {
+        //Convert each string to arrays and compare sorted versions to check if they actually contain the same characters.
+        //I needed to sort string since == operator is sensitive to the order of the elements.
+        return Array(s).sorted() == Array(t).sorted()
+    }
     
     // MARK: - Contains Duplicate
     /*
