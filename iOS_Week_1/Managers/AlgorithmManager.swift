@@ -7,6 +7,14 @@
 
 import Foundation
 
+extension String {
+    //An extension to process a string value before checking whether it's a palindrome.
+    //Just for fun and practice.
+    func processed() -> String{
+        return self.lowercased().trimmingCharacters(in: CharacterSet(charactersIn: "!:?*.,;<> +-=%&()_^'")).reversed().reversed()
+    }
+}
+
 class AlgoruthmManager: AlgorithmProtocol {
     
     // MARK: - Two Sum
@@ -51,12 +59,17 @@ class AlgoruthmManager: AlgorithmProtocol {
      Explanation: "amanaplanacanalpanama" is a palindrome.
      */
     func isPalindromTest() {
+        let palindromeString = "no lemon, no melon"
+        let nonPalindromeString = "Swift coding is quite fun, isn't it?"
         
+        print("\(palindromeString) is palindrome?: \(isPalindrome(palindromeString))")
+        print("\(nonPalindromeString) is palindrome?: \(isPalindrome(nonPalindromeString))")
     }
     
-//    func isPalindrome(_ s: String) -> Bool {
-//
-//    }
+    func isPalindrome(_ s: String) -> Bool {
+        //Please check String extension above to comprehend logic behind this.
+        return s == s.processed()
+    }
     
     // MARK: - Valid Anagram
     /*
