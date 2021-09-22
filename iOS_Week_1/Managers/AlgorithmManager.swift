@@ -27,8 +27,20 @@ class AlgoruthmManager: AlgorithmProtocol {
     }
     
     private func twoSum(_ nums: [Int], _ target: Int) -> [Int] {
-        // I solved of the question for you guys :D :D :D
-        return [0, 1]
+        //Maybe a complex search algorithm could be applied to improve algorithm complexity.
+        //Since we're not dealing with huge arrays, performance doesn't matter that much.. Does it??
+        
+        //Basically check every item with every other item in the array to encounter a couple that adds up to our target.
+        for i in 0..<nums.count {
+            for j in i+1..<nums.count {
+                if nums[i]+nums[j] == target {
+                    return [i,j]
+                }
+            }
+        }
+        
+        //Return array [-1,-1] since two values cannot be found.
+        return [-1,-1]
     }
     
     // MARK: - IsPalindrome
