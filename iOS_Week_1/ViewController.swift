@@ -41,6 +41,7 @@ class ViewController: UIViewController {
         supra.details()
         //Are you ready to fly?
         supra.testRide()
+        
     }
 
     
