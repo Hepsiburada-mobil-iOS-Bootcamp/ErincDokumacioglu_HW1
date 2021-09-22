@@ -189,12 +189,26 @@ class AlgoruthmManager: AlgorithmProtocol {
 
      */
     func missingNumberTest() {
+        //An array with elements [0,9], excluding number 4.
+        let nums = [0,2,3,5,1,6,8,9,7]
         
+        print("Missing number in \(nums) is : \(missingNumber(nums))")
     }
     
-//    private func missingNumber(_ nums: [Int]) -> Int {
-//
-//    }
+    private func missingNumber(_ nums: [Int]) -> Int {
+        //Work on a sorted array since @param nums is not mutable.
+        let numsSorted = nums.sorted()
+        
+        //Traverse array and find the element without a "successor"
+        for i in 0..<numsSorted.count {
+            if numsSorted[i+1] != numsSorted[i] + 1  {
+                return numsSorted[i]+1
+            }
+        }
+        
+        //Return -1 if such element is not found.
+        return -1
+    }
     
     
 }
