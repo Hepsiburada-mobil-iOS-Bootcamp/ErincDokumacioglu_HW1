@@ -99,12 +99,30 @@ class AlgoruthmManager: AlgorithmProtocol {
      Output: false
      */
     func duplicateTest() {
+        //Array with duplicate elements.
+        let input1 = [4,5,6,8,2,3,2]
         
+        //Array without duplicate elements
+        let input2 = [1,8,4,3,5,6]
+        
+        print("\(input1) does contain duplicates?: \(containsDuplicate(input1))")
+        print("\(input2) does contain duplicates?: \(containsDuplicate(input2))")
     }
     
-//    func containsDuplicate(_ nums: [Int]) -> Bool {
-//            
-//    }
+    func containsDuplicate(_ nums: [Int]) -> Bool {
+        //Sort the array.
+        let numsSorted = nums.sorted()
+        
+        for i in 0..<numsSorted.count {
+            //Check if sorted array contains two same elements consequently.
+            //Check value of i so that it doesn't throw index out of bounds exception.
+            if i+1 < numsSorted.count && numsSorted[i] == numsSorted[i+1]{
+                return true
+            }
+        }
+        
+        return false
+    }
     
     // MARK: - Merge Sorted Array
     /*
