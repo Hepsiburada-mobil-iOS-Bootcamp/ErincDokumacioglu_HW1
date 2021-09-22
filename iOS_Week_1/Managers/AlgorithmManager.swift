@@ -137,11 +137,26 @@ class AlgoruthmManager: AlgorithmProtocol {
      The result of the merge is [1,2,2,3,5,6] with the underlined elements coming from nums1.
      */
     func mergeArraysTest() {
+        var nums1 = [4,6,7,8,9,0,0,0]
+        //I only wanted to dynamically retrieve length of nums1. It is inefficient, I know.
+        let m = nums1.filter { $0 != 0 }.count
         
+        let nums2 = [1,2,3]
+        let n = nums2.count
+        
+        merge(&nums1, m, nums2, n)
+        
+        print("End result of merging: \(nums1)")
     }
     
     private func merge(_ nums1: inout [Int], _ m: Int, _ nums2: [Int], _ n: Int) {
-            
+        //I will go classical, since for now my Swift knowledge doesn't let me do something else.
+        for i in 0..<n {
+            nums1[nums1.count-n+i] = nums2[i]
+        }
+        
+        //Sort the array to have desired output.
+        nums1.sort()
     }
     
     // MARK: - Intersection of Two Arrays
