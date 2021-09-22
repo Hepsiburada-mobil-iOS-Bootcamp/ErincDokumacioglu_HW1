@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A0D18C7B26FB641D0060E850 /* CarType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D18C7426FB641D0060E850 /* CarType.swift */; };
+		A0D18C7C26FB641D0060E850 /* CylinderLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D18C7526FB641D0060E850 /* CylinderLayout.swift */; };
+		A0D18C7D26FB641D0060E850 /* TransmissionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D18C7626FB641D0060E850 /* TransmissionType.swift */; };
+		A0D18C7F26FB641D0060E850 /* FuelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D18C7826FB641D0060E850 /* FuelType.swift */; };
+		A0D18C8026FB641D0060E850 /* Engine.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D18C7926FB641D0060E850 /* Engine.swift */; };
+		A0D18C8126FB641D0060E850 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D18C7A26FB641D0060E850 /* Car.swift */; };
 		A7CF0A4126F7BEBF0049FA45 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CF0A4026F7BEBF0049FA45 /* AppDelegate.swift */; };
 		A7CF0A4326F7BEBF0049FA45 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CF0A4226F7BEBF0049FA45 /* SceneDelegate.swift */; };
 		A7CF0A4526F7BEBF0049FA45 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CF0A4426F7BEBF0049FA45 /* ViewController.swift */; };
@@ -19,9 +25,6 @@
 		A7CF0A7526F7C0680049FA45 /* AlgorithmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CF0A7426F7C0680049FA45 /* AlgorithmViewController.swift */; };
 		A7CF0A7826F7C5EB0049FA45 /* AlgorithmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CF0A7726F7C5EB0049FA45 /* AlgorithmManager.swift */; };
 		A7CF0A7A26F7C5F50049FA45 /* AlgorithmProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CF0A7926F7C5F50049FA45 /* AlgorithmProtocol.swift */; };
-		A7CF0A8126F7CECE0049FA45 /* SampleClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CF0A8026F7CECE0049FA45 /* SampleClass.swift */; };
-		A7CF0A8326F7CED40049FA45 /* SampleStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CF0A8226F7CED40049FA45 /* SampleStruct.swift */; };
-		A7CF0A8526F7CFD60049FA45 /* SampleEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CF0A8426F7CFD60049FA45 /* SampleEnum.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +45,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A0D18C7426FB641D0060E850 /* CarType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CarType.swift; path = ../../../HW1_Almost_Complete/iOS_Week_1/Modules/CarType.swift; sourceTree = "<group>"; };
+		A0D18C7526FB641D0060E850 /* CylinderLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CylinderLayout.swift; path = ../../../HW1_Almost_Complete/iOS_Week_1/Modules/CylinderLayout.swift; sourceTree = "<group>"; };
+		A0D18C7626FB641D0060E850 /* TransmissionType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TransmissionType.swift; path = ../../../HW1_Almost_Complete/iOS_Week_1/Modules/TransmissionType.swift; sourceTree = "<group>"; };
+		A0D18C7826FB641D0060E850 /* FuelType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FuelType.swift; path = ../../../HW1_Almost_Complete/iOS_Week_1/Modules/FuelType.swift; sourceTree = "<group>"; };
+		A0D18C7926FB641D0060E850 /* Engine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Engine.swift; path = ../../../HW1_Almost_Complete/iOS_Week_1/Modules/Engine.swift; sourceTree = "<group>"; };
+		A0D18C7A26FB641D0060E850 /* Car.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Car.swift; path = ../../../HW1_Almost_Complete/iOS_Week_1/Modules/Car.swift; sourceTree = "<group>"; };
 		A7CF0A3D26F7BEBF0049FA45 /* iOS_Week_1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOS_Week_1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7CF0A4026F7BEBF0049FA45 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A7CF0A4226F7BEBF0049FA45 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -60,9 +69,6 @@
 		A7CF0A7426F7C0680049FA45 /* AlgorithmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlgorithmViewController.swift; sourceTree = "<group>"; };
 		A7CF0A7726F7C5EB0049FA45 /* AlgorithmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlgorithmManager.swift; sourceTree = "<group>"; };
 		A7CF0A7926F7C5F50049FA45 /* AlgorithmProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlgorithmProtocol.swift; sourceTree = "<group>"; };
-		A7CF0A8026F7CECE0049FA45 /* SampleClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleClass.swift; sourceTree = "<group>"; };
-		A7CF0A8226F7CED40049FA45 /* SampleStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleStruct.swift; sourceTree = "<group>"; };
-		A7CF0A8426F7CFD60049FA45 /* SampleEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleEnum.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,9 +164,12 @@
 		A7CF0A7B26F7CDC20049FA45 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				A7CF0A8026F7CECE0049FA45 /* SampleClass.swift */,
-				A7CF0A8226F7CED40049FA45 /* SampleStruct.swift */,
-				A7CF0A8426F7CFD60049FA45 /* SampleEnum.swift */,
+				A0D18C7A26FB641D0060E850 /* Car.swift */,
+				A0D18C7426FB641D0060E850 /* CarType.swift */,
+				A0D18C7526FB641D0060E850 /* CylinderLayout.swift */,
+				A0D18C7926FB641D0060E850 /* Engine.swift */,
+				A0D18C7826FB641D0060E850 /* FuelType.swift */,
+				A0D18C7626FB641D0060E850 /* TransmissionType.swift */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -295,16 +304,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0D18C7B26FB641D0060E850 /* CarType.swift in Sources */,
+				A0D18C8026FB641D0060E850 /* Engine.swift in Sources */,
 				A7CF0A7526F7C0680049FA45 /* AlgorithmViewController.swift in Sources */,
+				A0D18C7C26FB641D0060E850 /* CylinderLayout.swift in Sources */,
+				A0D18C7D26FB641D0060E850 /* TransmissionType.swift in Sources */,
 				A7CF0A7826F7C5EB0049FA45 /* AlgorithmManager.swift in Sources */,
 				A7CF0A4526F7BEBF0049FA45 /* ViewController.swift in Sources */,
 				A7CF0A4B26F7BEBF0049FA45 /* iOS_Week_1.xcdatamodeld in Sources */,
-				A7CF0A8326F7CED40049FA45 /* SampleStruct.swift in Sources */,
-				A7CF0A8126F7CECE0049FA45 /* SampleClass.swift in Sources */,
 				A7CF0A4126F7BEBF0049FA45 /* AppDelegate.swift in Sources */,
 				A7CF0A4326F7BEBF0049FA45 /* SceneDelegate.swift in Sources */,
-				A7CF0A8526F7CFD60049FA45 /* SampleEnum.swift in Sources */,
 				A7CF0A7A26F7C5F50049FA45 /* AlgorithmProtocol.swift in Sources */,
+				A0D18C8126FB641D0060E850 /* Car.swift in Sources */,
+				A0D18C7F26FB641D0060E850 /* FuelType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
