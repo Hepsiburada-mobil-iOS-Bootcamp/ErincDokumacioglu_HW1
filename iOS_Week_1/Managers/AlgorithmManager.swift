@@ -167,12 +167,17 @@ class AlgoruthmManager: AlgorithmProtocol {
      Output: [2,2]
      */
     func arrayIntersectionTest() {
+        let nums1 = [1,2,3,4,5,6,7,8,9]
+        let nums2 = [0,-1,3,6,7,10]
         
+        print("intersection of \(nums1) and \(nums2) is \(intersect(nums1, nums2))")
     }
     
-//    func intersect(_ nums1: [Int], _ nums2: [Int]) -> [Int] {
-//
-//    }
+    func intersect(_ nums1: [Int], _ nums2: [Int]) -> [Int] {
+        //Convert each params to Sets to make use of intersection method.
+        //Since intersection returns a Set, convert it to an array to match the return type.
+        return Array(Set(nums1).intersection(Set(nums2)))
+    }
     
     // MARK: - Missing Number
     /*
