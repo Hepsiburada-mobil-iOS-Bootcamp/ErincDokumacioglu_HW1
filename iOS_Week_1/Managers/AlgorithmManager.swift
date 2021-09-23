@@ -201,7 +201,7 @@ class AlgoruthmManager: AlgorithmProtocol {
         
         //Traverse array and find the element without a "successor"
         for i in 0..<numsSorted.count {
-            if numsSorted[i+1] != numsSorted[i] + 1  {
+            if i+1 < numsSorted.count && numsSorted[i+1] != numsSorted[i] + 1  {
                 return numsSorted[i]+1
             }
         }
